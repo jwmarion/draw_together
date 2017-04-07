@@ -11,13 +11,13 @@ app.get('/',(req,res,next) => {
 });
 
 io.on('connection', (socket) =>{
-  console.log(`${socket.id}: has connected`)
+  console.log(`${socket.id}: has connected`);
   socket.on('disconnect',() => {
-    console.log(`${socket.id}: has disconnected`)
+    console.log(`${socket.id}: has disconnected`);
   });
-  socket.on('draw',(arr)=>{
-    console.log(`x: ${arr[0]} y:${arr[1]}`)
-    socket.broadcast.emit('draw',arr)
+  socket.on('draw',(arr,options)=>{
+    console.log(`x: ${arr[0]} y:${arr[1]}`);
+    socket.broadcast.emit('draw',arr,options);
   });
 });
 

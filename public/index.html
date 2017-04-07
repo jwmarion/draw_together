@@ -5,10 +5,18 @@
     <link rel="stylesheet" href="/style/style.css">
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='./spectrum.js'></script>
+    <link rel='stylesheet' href='./spectrum.css'>
     <script src="./main.js"></script>
+
     <title>Draw Together</title>
   </head>
   <body>
-      <canvas id="canvas" width="500" height="500"></canvas>
+      <canvas id="canvas" width="800" height="800"></canvas>
+      <input type='text' id="flat">
+      <button id="brushUp" type="button" >Brush +</button>
+      <button id="brushDown" type="button" >Brush -</button>
+      <button id="eraser" type="button">Erase</button>
+    </div>
   </body>
 </html>
