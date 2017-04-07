@@ -1,0 +1,15 @@
+{
+  "name": "drawsomething",
+  "version": "1.0.0",
+  "description": "communal drawing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Price and James Marion",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socketio": "^1.0.0"
+  }
+}
